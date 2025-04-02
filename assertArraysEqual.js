@@ -11,15 +11,15 @@ const eqArrays = function(array1, array2) {
   }
 };
 
-const assertArraysEqual = function(eqArrays) {
-  if (eqArrays === true) {
-    console.log(`✅✅✅ Arrays are equal`);
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1, array2) === true) {
+    console.log(`✅✅✅ Arrays are equal: [${array1}] === [${array2}]`);
   } else {
-    console.log(`🛑🛑🛑 Arrays are not equal`);
+    console.log(`🛑🛑🛑 Arrays are not equal: [${array1}] !== [${array2}]`);
   }
 
 };
 
 //test
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3])); //true
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3])); //false
+assertArraysEqual([1, 2, 3], [1, 2, 3]); //true
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); //false
