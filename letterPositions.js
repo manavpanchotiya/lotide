@@ -1,3 +1,25 @@
+const eqArrays = function(array1, array2) {
+  if (array1.length !== array2.length)
+    return false;
+  else {
+    for (let i = 0; i < array1.length; i++) {
+      if (array1[i] !== array2[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+};
+
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1, array2) === true) {
+    console.log(`✅✅✅ Arrays are equal: [${array1}] === [${array2}]`);
+  } else {
+    console.log(`🛑🛑🛑 Arrays are not equal: [${array1}] !== [${array2}]`);
+  }
+
+};
+
 const letterPositions = function(sentence) {
   let results = {};
 
@@ -18,3 +40,8 @@ const letterPositions = function(sentence) {
 };
 
 console.log(letterPositions("lighthouse in the house"));
+const result = letterPositions('hello');
+assertArraysEqual(result['h'], [0]);
+assertArraysEqual(result['e'], [1]);
+assertArraysEqual(result['l'], [2, 3]);
+assertArraysEqual(result['o'], [4]);
