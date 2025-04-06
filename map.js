@@ -35,7 +35,7 @@ const assertArraysEqual = function(array1, array2) {
 
 };
 
-//Test Cases:
+//Three Test Cases:
 
 assertArraysEqual(map(words, (word) => word[0]), ['g', 'c', 't', 'm', 't']); //true
 assertArraysEqual(map(words, (word) => word[1]), ['g', 'c', 't', 'm', 't']); // false
