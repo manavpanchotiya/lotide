@@ -16,5 +16,12 @@ describe("#tail", () => {
     assert.strictEqual(result[1], 'Labs');
   });
 
+  it("make sure the original array was not altered by the tail function", () => {
+    const words = ["hello", "world", "lighthouse"];
+    tail(words);
+    assert.strictEqual(words.length, 3);
+  });
+  
+
 });
 
