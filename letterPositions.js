@@ -40,6 +40,7 @@ const letterPositions = function(sentence) {
 };
 
 console.log(letterPositions("lighthouse in the house"));
+
 const result = letterPositions('hello');
 assertArraysEqual(result['h'], [0]);
 assertArraysEqual(result['e'], [1]);
