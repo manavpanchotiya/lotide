@@ -66,7 +66,7 @@ const longSleeveShirtObject = {
   color: "red",
   sleeveLength: "long" };
 
-console.log(eqObjects(multiColorShirtObject,anotherMultiColorShirtObject));
-console.log(eqObjects(shirtObject,anotherShirtObject));
-console.log(eqObjects(anotherShirtObject,longSleeveShirtObject));
+assertEqual(eqObjects(multiColorShirtObject,anotherMultiColorShirtObject), true);
+assertEqual(eqObjects(shirtObject,anotherShirtObject), true);
+assertEqual(eqObjects(anotherShirtObject,longSleeveShirtObject), false);
 assertEqual(eqObjects(multiColorShirtObject,anotherMultiColorShirtObject), true);
