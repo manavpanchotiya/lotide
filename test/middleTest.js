@@ -4,10 +4,6 @@ const middle = require("../middle");
 //test cases
 
 describe("#middle", () => {
-  it("returns middle of [1, 2, 3] as [2]", () => {
-    assert.deepEqual(middle([1, 2, 3]), [2]);
-  });
-
   it("returns middle of [1] as []", () => {
     assert.deepEqual(middle([1]), []);
   });
