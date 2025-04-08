@@ -21,7 +21,6 @@ describe("#tail", () => {
     tail(words);
     assert.strictEqual(words.length, 3);
   });
-  
 
 });
 
